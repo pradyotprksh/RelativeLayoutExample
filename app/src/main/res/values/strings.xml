@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RelativeLayoutExample</string>
+    <string name="click_me">CLICK ME</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+
+    <string name="primaryTextView">"This Is The Primary TextView"</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="six">Six</string>
+    <string name="enter_something">Enter Something</string>
+    <string name="set_text">Set Text</string>
+    <string name="nothing">Nothing Entered</string>
+</resources>
