@@ -58,7 +58,7 @@ public class CoordinatorLayout extends AppCompatActivity {
 
         @Override
         protected void onPreExecute() {
-
+            Toast.makeText(getApplicationContext(), "Started", Toast.LENGTH_SHORT).show();
         }
 
         @Override
