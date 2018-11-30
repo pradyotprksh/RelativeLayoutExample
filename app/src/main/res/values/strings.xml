@@ -21,4 +21,7 @@
     <string name="open_browser">Open Browser</string>
     <string name="enter_message">Enter Message</string>
     <string name="open_whatsapp">Open WhatsApp</string>
+    <string name="show_snack_bar">Show Snack bar</string>
+    <string name="this_is_a_text_view">This Is A Text View</string>
+    <string name="open_coordinate_layout">Open Coordinate Layout</string>
 </resources>

@@ -25,7 +25,8 @@
         <activity
             android:name=".CameraActivity.CameraActivity"
             android:label="Camera Activity" />
-        <activity android:name=".OpneURL.BrowserActivity"></activity>
+        <activity android:name=".OpneURL.BrowserActivity" />
+        <activity android:name=".CoordinatorLayout.CoordinatorLayout"></activity>
     </application>
 
 </manifest>

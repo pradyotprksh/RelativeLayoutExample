@@ -131,5 +131,18 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_below="@id/openNewActivity"/>
+
+    <Button
+        android:id="@+id/openCoordinate"
+        android:textColor="@android:color/white"
+        android:text="@string/open_coordinate_layout"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/openURL"/>
     
 </RelativeLayout>

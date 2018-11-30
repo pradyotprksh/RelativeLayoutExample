@@ -23,10 +23,13 @@ public class BrowserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browser);
 
+        // Local Variables and initialization
         Button openGoogle = findViewById(R.id.openGoogle);
         Button openWhatsapp = findViewById(R.id.openWhatsapp);
         final EditText message = findViewById(R.id.message);
 
+        // OnClickListener
+        // Google
         openGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +40,7 @@ public class BrowserActivity extends AppCompatActivity {
             }
         });
 
+        // WhatsApp
         openWhatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

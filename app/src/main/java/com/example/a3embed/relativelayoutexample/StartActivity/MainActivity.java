@@ -12,11 +12,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.a3embed.relativelayoutexample.CameraActivity.CameraActivity;
+import com.example.a3embed.relativelayoutexample.CoordinatorLayout.CoordinatorLayout;
 import com.example.a3embed.relativelayoutexample.OpneURL.BrowserActivity;
 import com.example.a3embed.relativelayoutexample.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Global variables
     final public int CAMERA_RESULT = 101;
     private TextView primaryTextView;
 
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Local Variables
         primaryTextView = findViewById(R.id.mainTextView);
         final Button mainButton = findViewById(R.id.buttonBelow);
         final Button button1 = findViewById(R.id.button1);
@@ -34,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
         Button openURL = findViewById(R.id.openURL);
         Button setButton = findViewById(R.id.setButton);
         Button openNewActivity = findViewById(R.id.openNewActivity);
+        Button openCoordinate = findViewById(R.id.openCoordinate);
 
+        // Variable Initialization
         primaryTextView.setText(R.string.primaryTextView);
         mainButton.setText(R.string.click_me);
         button1.setText(R.string.one);
@@ -43,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         setButton.setText(R.string.set_text);
         editText.setHint(R.string.enter_something);
 
+        // OnClickListener
         mainButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,8 +104,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        openCoordinate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CoordinatorLayout.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
+    // When ImageActivity is Closed. Its result is got here
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
