@@ -24,4 +24,5 @@
     <string name="show_snack_bar">Show Snack bar</string>
     <string name="this_is_a_text_view">This Is A Text View</string>
     <string name="open_coordinate_layout">Open Coordinate Layout</string>
+    <string name="open_google">Open Google</string>
 </resources>
