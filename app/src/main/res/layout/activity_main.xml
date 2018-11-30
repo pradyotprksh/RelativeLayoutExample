@@ -105,5 +105,18 @@
         android:textSize="25sp"
         android:background="@android:color/black"
         android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/openNewActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setButton"
+        android:layout_alignLeft="@id/editText"
+        android:layout_alignRight="@id/setButton"
+        android:layout_alignStart="@id/editText"
+        android:layout_alignEnd="@id/setButton"
+        android:layout_marginTop="20dp"
+        android:text="@string/open_new_activity"
+        android:textSize="20sp"/>
     
 </RelativeLayout>

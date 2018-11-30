@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RelativeLayoutExample</string>
+    <string name="app_name">Layouts</string>
     <string name="click_me">CLICK ME</string>
     <string name="one">One</string>
     <string name="two">Two</string>
@@ -12,4 +12,9 @@
     <string name="enter_something">Enter Something</string>
     <string name="set_text">Set Text</string>
     <string name="nothing">Nothing Entered</string>
+    <string name="open_new_activity">Open New Activity</string>
+    <string name="add_image">Add Image</string>
+    <string name="accessDenied">Access Was Not Granted</string>
+    <string name="accessGranted">Access Was Granted</string>
+    <string name="imageAdded">Image Was Added</string>
 </resources>
