@@ -17,4 +17,8 @@
     <string name="accessDenied">Access Was Not Granted</string>
     <string name="accessGranted">Access Was Granted</string>
     <string name="imageAdded">Image Was Added</string>
+    <string name="welcome_to_the_application">Welcome To The Application</string>
+    <string name="open_browser">Open Browser</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="open_whatsapp">Open WhatsApp</string>
 </resources>

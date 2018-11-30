@@ -18,12 +18,14 @@
             android:label="Relative And Linear Layout">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".CameraActivity.CameraActivity"
-            android:label="Camera Activity"/>
+            android:label="Camera Activity" />
+        <activity android:name=".OpneURL.BrowserActivity"></activity>
     </application>
 
 </manifest>

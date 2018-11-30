@@ -5,18 +5,19 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.example.a3embed.relativelayoutexample.CameraActivity.CameraActivity;
+import com.example.a3embed.relativelayoutexample.OpneURL.BrowserActivity;
 import com.example.a3embed.relativelayoutexample.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    final public int CAMERA_RESULT = 100;
+    final public int CAMERA_RESULT = 101;
     private TextView primaryTextView;
 
     @Override
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         final Button button2 = findViewById(R.id.button2);
         final Button button3 = findViewById(R.id.button3);
         final EditText editText = findViewById(R.id.editText);
+        Button openURL = findViewById(R.id.openURL);
         Button setButton = findViewById(R.id.setButton);
         Button openNewActivity = findViewById(R.id.openNewActivity);
 
@@ -87,12 +89,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, CAMERA_RESULT);
             }
         });
+
+        openURL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BrowserActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == CAMERA_RESULT) {
+            Log.d("RESULT CODE: ", String.valueOf(requestCode));
             if (resultCode == RESULT_OK) {
                 int returnedResult = Integer.parseInt(data.getData().toString());
                 if (returnedResult == 100) {
