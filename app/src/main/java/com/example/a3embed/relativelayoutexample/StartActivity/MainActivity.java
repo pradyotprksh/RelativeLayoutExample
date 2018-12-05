@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.a3embed.relativelayoutexample.CameraActivity.CameraActivity;
+import com.example.a3embed.relativelayoutexample.CoordinatorLayout.CoordinateLayoutToolbar;
 import com.example.a3embed.relativelayoutexample.CoordinatorLayout.CoordinatorLayout;
 import com.example.a3embed.relativelayoutexample.OpneURL.BrowserActivity;
 import com.example.a3embed.relativelayoutexample.R;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Button setButton = findViewById(R.id.setButton);
         Button openNewActivity = findViewById(R.id.openNewActivity);
         Button openCoordinate = findViewById(R.id.openCoordinate);
+        Button openCoordinateToolbar = findViewById(R.id.openCoordinateToolbar);
 
         // Variable Initialization
         primaryTextView.setText(R.string.primaryTextView);
@@ -85,6 +87,14 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     primaryTextView.setText(R.string.nothing);
                 }
+            }
+        });
+
+        openCoordinateToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CoordinateLayoutToolbar.class);
+                startActivityForResult(intent, CAMERA_RESULT);
             }
         });
 
